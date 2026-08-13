@@ -1,0 +1,17 @@
+{
+  "features": [
+    "Return_1D",
+    "Return_5D",
+    "Return_10D",
+    "SMA5_Ratio",
+    "SMA20_Ratio",
+    "Volatility_5D",
+    "Volatility_20D",
+    "Daily_Range",
+    "Volume_Change",
+    "RSI"
+  ],
+  "price_column": "Close",
+  "target_price": "Next_Close",
+  "target_direction": "Direction"
+}
