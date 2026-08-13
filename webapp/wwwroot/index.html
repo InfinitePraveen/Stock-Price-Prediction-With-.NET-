@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stock Price Prediction</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><strong>Stock Price Predictor</strong><nav><a href="#predict">Predict</a><a href="#method">Method</a><a href="https://github.com/InfinitePraveen" target="_blank">GitHub</a><a href="https://www.linkedin.com/in/infinitepraveen/" target="_blank">LinkedIn</a></nav></header>
+<main>
+<section class="hero"><p class="tag">TIME SERIES • OHLCV • MACHINE LEARNING</p><h1>Predict the next trading-day price.</h1><p>Upload your Reliance historical OHLCV CSV. The C# application validates the data, engineers time-series features, trains Ridge Regression and produces a price estimate plus UP/DOWN direction.</p></section>
+<section id="predict" class="card"><h2>Upload Reliance OHLCV Dataset</h2><p>Required: Date, Open, High, Low, Close. Volume is recommended.</p><input id="file" type="file" accept=".csv"><button id="run">Train & Predict</button><div id="msg"></div><div id="results"></div></section>
+<section id="method" class="grid"><div class="card"><h3>Features</h3><p>Returns, moving averages, rolling volatility, intraday range, volume change and RSI.</p></div><div class="card"><h3>Validation</h3><p>Chronological 80/20 split prevents future observations leaking into training.</p></div><div class="card"><h3>Target</h3><p>Next trading-day <b>Close</b>. A separate Price column is not needed.</p></div></section>
+</main>
+<footer>Praveen Kumar · <a href="https://github.com/InfinitePraveen">GitHub</a> · <a href="https://www.linkedin.com/in/infinitepraveen/">LinkedIn</a></footer>
+<script src="app.js"></script>
+</body></html>
